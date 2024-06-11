@@ -9,9 +9,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        BooksToRead booksToRead = new BooksToRead(null); 
-        BooksToRead booksToRead1 = new BooksToRead(null);
-
+        BooksToRead booksToRead = new BooksToRead(); 
+        BooksToRead booksToRead1 = new BooksToRead();
         BooksToRead books = new BooksToRead("Need read", new Book("Война и мир", "Лев Толстой", 1869), new Book("Преступление и наказание", "Федор Достоевский", 1866));
 
         Console.WriteLine(booksToRead);

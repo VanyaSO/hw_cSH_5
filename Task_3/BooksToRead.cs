@@ -11,7 +11,7 @@ public class BooksToRead
         _count = 0;
     }
 
-    public BooksToRead(string? name): this(name, new Book[]{}){}
+    public BooksToRead(): this(null, new Book[]{}){}
     public BooksToRead(string? name, params Book[] books)
     {
         Name = name ?? (_count > 0 ? $"no name({_count})" : "no name");
