@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace Task_3;
 
 public class BooksToRead
@@ -19,6 +21,15 @@ public class BooksToRead
         _count += 1;
     }
 
+    public void Show()
+    {
+        Console.WriteLine(this);
+        foreach (Book book in _books)
+        {
+            Console.WriteLine(book);
+        }
+        Console.WriteLine();
+    }
     public void AddBook(Book newBook)
     {
         _books.Add(newBook);
@@ -45,11 +56,6 @@ public class BooksToRead
 
     public override string ToString()
     {
-        Console.WriteLine($"Name: {Name}, Count books: {_books.Count}");
-        foreach (var book in _books)
-        {
-            Console.WriteLine(book);
-        }
-        return "";
+        return $"Name: {Name}, Count books: {_books.Count}";
     }
 }

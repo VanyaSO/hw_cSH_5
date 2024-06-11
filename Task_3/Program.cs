@@ -13,17 +13,17 @@ class Program
         BooksToRead booksToRead1 = new BooksToRead();
         BooksToRead books = new BooksToRead("Need read", new Book("Война и мир", "Лев Толстой", 1869), new Book("Преступление и наказание", "Федор Достоевский", 1866));
 
-        Console.WriteLine(booksToRead);
-        Console.WriteLine(booksToRead1);
-        Console.WriteLine(books);
+        booksToRead.Show();
+        booksToRead1.Show();
+        books.Show();
         
         booksToRead.AddBook(new Book("Мастер и Маргарита", "Михаил Булгаков", 1967));
         booksToRead.AddBook(new Book("1984", "Джордж Оруэлл", 1949));
         booksToRead.AddBook(new Book("Про мир", "Неизветный автор", 1999));
         booksToRead.AddBook(new Book("Капитан в море", "Неизветный автор", 1939));
-        Console.WriteLine(booksToRead);
+        booksToRead.Show();
         
-        Console.WriteLine(books);
+        books.Show();
 
         if (books.CheckBook("Мастер и Маргарита"))
         {
@@ -52,7 +52,7 @@ class Program
         }
         Console.WriteLine();
 
-        Console.WriteLine(booksToRead);
+        booksToRead.Show();
         
         Console.WriteLine("Сравнение авторов");
         try
